@@ -9735,3 +9735,38 @@ header.masthead h1 {
 #about_us i {
   color: white !important;
 }
+
+#reviews .container-fluid {
+  max-width: 1920px;
+}
+
+#reviews .container-fluid .inspiration-box {
+  position: relative;
+  display: block;
+}
+
+#reviews .container-fluid .inspiration-box .inspiration-box-caption {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: left;
+  opacity: 0;
+  color: #fff;
+  background: rgba(244, 98, 58, 0.9);
+  transition: opacity 0.25s ease;
+}
+
+#reviews .container-fluid .inspiration-box .inspiration-box-caption .descriptions {
+  text-align: left;
+  font-size: 1rem;
+}
+
+#reviews .container-fluid .inspiration-box:hover .inspiration-box-caption {
+  opacity: 1;
+}

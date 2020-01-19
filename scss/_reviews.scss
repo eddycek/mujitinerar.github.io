@@ -1,0 +1,38 @@
+// Styling for the inspiration section
+#reviews {
+  .container-fluid {
+    max-width: 1920px;
+    .inspiration-box {
+      position: relative;
+      display: block;
+      .inspiration-box-caption {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        padding: 5rem;
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        bottom: 0;
+
+        text-align: left;
+        opacity: 0;
+
+        color: $white;
+        background: fade-out($primary, .1);
+        transition: opacity 0.25s ease;
+        .descriptions {
+          text-align: left;
+          font-size: 1rem;
+        }
+      }
+      &:hover {
+        .inspiration-box-caption {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
